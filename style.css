@@ -5,7 +5,6 @@
 
 body{
   background: url('http://www.developerdev.com/images/placeholders/1920x1200-3.jpg');
-  background-size: 100% auto;
 }
 
 nav{
@@ -130,10 +129,17 @@ nav ul li a:hover:after{
   }
 }
 
+@media (min-width:1921px){ /*Depende del ancho de la imagen de fondo*/
+  body{
+      background-size: 100% auto;
+  }
+}
+
 @media (min-width:2500px){
   *{
     zoom:1.05;
   }
+
 }
 
 @media (min-width:2700px){
