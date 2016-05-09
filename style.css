@@ -98,8 +98,6 @@ nav ul li a:hover:after{
   width: 100%;
   height: 50%;
   margin: 20% 0 auto;
-  /*box-sizing: border-box;
-  border:1px solid red;*/
 }
 
 #frontend{background-color: rgb(209, 158, 99); transition: background-color ease .2s;}
@@ -180,17 +178,25 @@ nav ul li a:hover:after{
 
 @media (max-width:1000px){
   .seccion{
-    height: 175px;
+    height: 300px;
   }
   .seccion img{
-    margin:0 auto;
+    margin:10% auto;
     display: block;
     width: 70%;
   }
+
+  .secciones-wrap{
+    width: 90%;
+  }
 }
 
-@media (max-width:300px){
+@media (max-width:800px){
   .seccion{
+    height: 220px;
+  }
+
+  .secciones-wrap{
     width: 100%;
   }
 }
