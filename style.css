@@ -74,8 +74,6 @@ nav ul li a:hover:after{
 
 .seccion{
   width: 20%;
-  /*box-sizing: border-box;
-  border:1px solid red;*/
   height: 350px;
   position: relative;
   margin:20px;
@@ -83,12 +81,6 @@ nav ul li a:hover:after{
   border-radius: 1%;
   float:left;
   display: inline;
-}
-
-.seccion:after {
-	content: "";
-	width: 100%;
-	display: inline-block;
 }
 
 .seccion h2{
@@ -103,9 +95,6 @@ nav ul li a:hover:after{
 .seccion img{
   width: 100%;
   margin: 70px 0 auto;
-  /*box-sizing: border-box;
-  border:1px solid red;*/
-  dislay: block;
 }
 
 #frontend{background-color: rgb(209, 158, 99); transition: background-color ease .2s;}
