@@ -64,13 +64,17 @@ nav ul li a:hover:after{
 
 .secciones-wrap{
   width:80%;
-  display:flex;
   margin:200px auto 0;
   min-height: 500px;
+  /*display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;*/
+  box-sizing: border-box;
+  border:1px solid yellow;
+  text-align: justify;
+  display:flex;
   justify-content: space-around;;
   flex-wrap: wrap;
-  /*box-sizing: border-box;
-  border:1px solid yellow;*/
 }
 
 .seccion{
@@ -82,6 +86,14 @@ nav ul li a:hover:after{
   margin:20px;
   min-width: 300px;
   border-radius: 1%;
+  float:left;
+  display: inline;
+}
+
+.seccion:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
 }
 
 .seccion h2{
@@ -116,9 +128,15 @@ nav ul li a:hover:after{
   height: 100%;
 }
 
-@media (max-width:1685px){
+@media (max-width:1720px){
   .secciones-wrap{
     margin:100px auto 0;
+  }
+  .seccion{
+    width: 30%;
+  }
+  .secciones-wrap{
+    width: 70%;
   }
 }
 
