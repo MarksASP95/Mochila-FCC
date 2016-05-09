@@ -5,6 +5,7 @@
 
 body{
   background: url('http://www.developerdev.com/images/placeholders/1920x1200-3.jpg');
+  background-size: 100% auto;
 }
 
 nav{
@@ -74,6 +75,8 @@ nav ul li a:hover:after{
 
 .seccion{
   width: 20%;
+  /*box-sizing: border-box;
+  border:1px solid red;*/
   height: 350px;
   position: relative;
   margin:20px;
@@ -94,7 +97,10 @@ nav ul li a:hover:after{
 
 .seccion img{
   width: 100%;
-  margin: 70px 0 auto;
+  height: 50%;
+  margin: 20% 0 auto;
+  /*box-sizing: border-box;
+  border:1px solid red;*/
 }
 
 #frontend{background-color: rgb(209, 158, 99); transition: background-color ease .2s;}
@@ -121,6 +127,48 @@ nav ul li a:hover:after{
   }
   .secciones-wrap{
     width: 70%;
+  }
+}
+
+@media (min-width:2500px){
+  *{
+    zoom:1.05;
+  }
+}
+
+@media (min-width:2700px){
+  *{
+    zoom:1.1;
+  }
+}
+
+@media (min-width:3000px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:3300px){
+  *{
+    zoom:1.1;
+  }
+}
+
+@media (min-width:3600px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:4000px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:4200px){
+  *{
+    zoom:1.27;
   }
 }
 
