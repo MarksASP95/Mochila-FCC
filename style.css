@@ -1,0 +1,270 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3b92161cef01773ab8e0f83d4da1126&auto=format&fit=crop&w=750&q=80');
+}
+
+#hamb{
+  width: 30px;
+  height: 30px;
+}
+
+#menu-button{
+  display: none;
+}
+
+label{
+  padding:10px;
+  margin: 30px 30px 30px 0;
+  float:right;
+  display:none;
+  cursor:pointer;
+}
+
+nav{
+  width:70%;
+  display: inline-block;
+  float:right;
+}
+
+#logo{
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  color:#fff;
+  width:15%;
+  margin:40px;
+  line-height: 120px;
+}
+
+nav ul{
+  padding:40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li{
+
+  list-style: none;
+  margin-left:40px;
+  line-height: 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+#naranja:after{border-color:rgb(228, 149, 43);}
+#verde:after{border-color:rgb(31, 143, 59);}
+#rojo:after{border-color:rgb(241, 42, 29);}
+#azul:after{border-color: rgb(65, 102, 235);}
+
+nav ul li a:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px;
+  transform: scaleX(0.0001);
+  transition: transform 200ms ease-in-out;
+}
+
+nav ul li a:hover:after{
+  transform: scaleX(1);
+}
+
+.secciones{
+  width: 100%;
+  display: inline-block;
+}
+
+.secciones-wrap{
+  width:80%;
+  margin:200px auto 0;
+  min-height: 500px;
+  text-align: justify;
+  display:flex;
+  justify-content: space-around;;
+  flex-wrap: wrap;
+}
+
+.seccion{
+  width: 20%;
+  height: 350px;
+  position: relative;
+  margin:20px;
+  min-width: 300px;
+  border-radius: 1%;
+  float:left;
+  display: inline;
+}
+
+.seccion h2{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom:0;
+  color:#000;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.seccion img{
+  width: 100%;
+  height: 50%;
+  margin: 20% 0 auto;
+}
+
+#frontend{background-color: rgb(209, 158, 99); transition: background-color ease .2s;}
+#frontend:hover{background-color: rgb(237, 123, 18)}
+#backend{background-color: rgb(91, 122, 97); transition: background-color ease .2s;}
+#backend:hover{background-color: rgb(27, 168, 41);}
+#tutoriales{background-color: rgb(208, 115, 115); transition: background-color ease .2s;}
+#tutoriales:hover{background-color: rgb(231, 55, 44);}
+#herramientas{background-color: rgb(91, 101, 154); transition: background-color ease .2s;}
+#herramientas:hover{background-color: rgb(43, 84, 232);}
+
+
+.seccion a{
+  display:block;
+  height: 100%;
+}
+
+@media (max-width:600px) and (orientation:landscape){
+  label{
+    margin: 15px 30px 0 30px;
+  }
+  #logo{
+    margin:40px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width:1024px){
+  .secciones-wrap{
+    margin: 100px auto 0;
+  }
+}
+
+@media (max-width:768px){
+  nav  ul{
+    flex-direction: column;
+  }
+
+  nav{
+    position: fixed;
+    opacity: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(82, 161, 226, 0.8);
+    display:block;
+    transition: opacity 0.1s ease-in;
+  }
+
+  nav ul li{
+    width:100%;
+    text-align: center;
+    margin:0;
+  }
+
+  label{
+    display: block;
+  }
+
+  #menu-button:checked ~ nav{
+    display:block;
+    opacity: 1;
+  }
+
+}
+
+@media (max-width:1720px){
+  .secciones-wrap{
+    margin:0 auto;
+  }
+  .seccion{
+    width: 30%;
+    height: 250px;
+  }
+  .secciones-wrap{
+    width: 70%;
+  }
+}
+
+@media (min-width:1921px){ /*Depende del ancho de la imagen de fondo*/
+  body{
+      background-size: 100% auto;
+  }
+}
+
+@media (min-width:2500px){
+  *{
+    zoom:1.05;
+  }
+
+}
+
+@media (min-width:2700px){
+  *{
+    zoom:1.1;
+  }
+}
+
+@media (min-width:3000px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:3300px){
+  *{
+    zoom:1.1;
+  }
+}
+
+@media (min-width:3600px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:4000px){
+  *{
+    zoom:1.15;
+  }
+}
+
+@media (min-width:4200px){
+  *{
+    zoom:1.27;
+  }
+}
+
+@media (max-width:1000px){
+  .seccion{
+    height: 300px;
+  }
+  .seccion img{
+    margin:10% auto;
+    display: block;
+    width: 70%;
+  }
+
+  .secciones-wrap{
+    width: 90%;
+  }
+}
+
+@media (max-width:800px){
+  .seccion{
+    height: 220px;
+  }
+
+  .secciones-wrap{
+    width: 100%;
+  }
+}
